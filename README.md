@@ -68,9 +68,9 @@ Değişiklikleri gönderin
 GNU General Public License v3.0
 
 📞 Destek
-Email: destek@dcansoft.com
+Email: softdcan@gmail.com
 
-Website: https://dcansoft.com
+Website: https://dcansoft.com.tr
 
 https://assets/integration-diagram.png
 
