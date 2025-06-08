@@ -36,6 +36,7 @@ javascript
 setInterval(syncProducts, 3600000); // Her saat
 📦 Kurulum Paketi İçeriği
 text
+
 dcansoft-trendpres/
 ├── assets/               # Görsel dosyalar
 │   ├── css/              # Admin stilleri
@@ -47,6 +48,8 @@ dcansoft-trendpres/
 ├── languages/            # Çeviri dosyaları
 ├── dcansoft-trendpres.php # Ana eklenti dosyası
 └── uninstall.php         # Temiz kaldırma
+
+
 🔐 Güvenlik Önlemleri
 python
 # Örnek API Doğrulama
@@ -55,6 +58,7 @@ def verify_request(request):
     if api_key != os.getenv('DCAN_API_KEY'):
         raise PermissionError("Geçersiz erişim")
 🌍 Çoklu Dil Desteği
+
 Türkçe
 
 İngilizce
@@ -64,8 +68,12 @@ Arapça (Beta)
 Rusça (Yakında)
 
 🛑 Sorun Giderme
+
+
 bash
+
 # Hata ayıklama modu
+
 tail -f debug.log | grep -i "dcansoft"
 Yaygın Sorunlar:
 
@@ -76,17 +84,16 @@ Görsel Yükleme Hatası: php.ini'de upload_max_filesize değerini artırın
 MySQL Timeout: wait_timeout=300 olarak ayarlayın
 
 📜 Lisans Bilgisi
+
 legal
 Copyright (C) 2023 DCanSoft
 
 Bu program ücretsiz yazılımdır: GNU Genel Kamu Lisansı 
 koşullarına göre dağıtabilir ve/veya değiştirebilirsiniz.
 📞 İletişim
-Resmi Site: dcansoft.com
+Resmi Site: dcansoft.com.tr
 
 Destek: support@dcansoft.com
-
-Acılı Destek: +90 555 123 45 67
 
 https://assets/badge.png
 
