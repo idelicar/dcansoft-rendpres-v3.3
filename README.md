@@ -1,4 +1,6 @@
-DCanSoft TrendPres v4.0 - WooCommerce için Trendyol Entegrasyon Eklentisi
+DCanSoft TrendPres v4.0 
+
+WooCommerce için Trendyol Entegrasyon Eklentisi
 https://assets/dcansoft-logo.png
 
 📌 Temel Özellikler
