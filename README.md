@@ -1,77 +1,93 @@
-# dcansoft-trendpres-v3.3
-DCanSoft TrendPres v3.3 - WooCommerce Trendyol Ürün Entegrasyonu
-https://assets/dcansoft-logo.png
+#DCanSoft TrendPres v4.0 - Ultimate WooCommerce Trendyol Entegrasyonu
+https://assets/banner.png
 
-📌 Özellikler
-Trendyol Ürün Çekme: URL ile ürün bilgilerini otomatik alır
+🌟 Premium Özellikler
+🚀 Akıllı Ürün Çekme
+1-Tıkla Aktarma: Trendyol linkiyle ürünleri otomatik al
 
-WooCommerce Entegrasyonu: Çekilen ürünleri otomatik oluşturur
+Çoklu Format Desteği: URL, CSV veya API bağlantısı
 
-Çift Yöntemli Sistem: API + HTML parsing desteği
+Gerçek Zamanlı Önizleme: Ürünler eklenmeden önce görüntüle
 
-Kullanıcı Dostu Arayüz: Basit admin paneli
-
-🚀 Kurulum
-ZIP dosyasını indirin:
+📊 Güçlü Analitik
+Diagram
+Code
+🛠 Teknik Özellikler
+Bileşen	Minimum Gereksinim	Önerilen
+PHP	7.4	8.0+
+WordPress	5.8	6.2+
+WooCommerce	5.5	7.0+
+MySQL	5.6	8.0
+🎯 Kullanım Senaryoları
+Dropshipping Mağazaları
 
 bash
-wget https://example.com/DCanSoft-TrendPres-v3.3.zip
-WordPress'e yükleyin:
-
-Admin Panel > Eklentiler > Yeni Ekle > ZIP Yükle
-
-Gerekli ayarları yapın:
+# Toplu ürün aktarma
+wp dcansoft import --file=urunler.csv --type=trendyol
+Fiyat Karşılaştırma Siteleri
 
 php
-// wp-config.php'ye ekleyin
-define('DCANSOFT_API_KEY', 'trendyol_api_anahtarınız');
-🛠 Kullanım
-WordPress admin panelinde TrendPres PRO menüsüne gidin
+// API Kullanımı
+$product = DCansoft_API::get_product('trendyol_ID');
+Stok Senkronizasyonu
 
-Trendyol ürün URL'sini girin
+javascript
+// Otomatik senkronizasyon
+setInterval(syncProducts, 3600000); // Her saat
+📦 Kurulum Paketi İçeriği
+text
+dcansoft-trendpres/
+├── assets/               # Görsel dosyalar
+│   ├── css/              # Admin stilleri
+│   ├── js/               # Interaktif scriptler
+│   └── img/              # Logo ve bannerlar
+├── includes/             # Çekirdek fonksiyonlar
+│   ├── class-api.php      # API işlemleri
+│   └── class-importer.php # Veri aktarımı
+├── languages/            # Çeviri dosyaları
+├── dcansoft-trendpres.php # Ana eklenti dosyası
+└── uninstall.php         # Temiz kaldırma
+🔐 Güvenlik Önlemleri
+python
+# Örnek API Doğrulama
+def verify_request(request):
+    api_key = request.headers.get('X-DCanSoft-Key')
+    if api_key != os.getenv('DCAN_API_KEY'):
+        raise PermissionError("Geçersiz erişim")
+🌍 Çoklu Dil Desteği
+Türkçe
 
-"Ürünü Çek" butonuna basın
+İngilizce
 
-https://assets/admin-panel-screenshot.png
+Arapça (Beta)
 
-⚙️ Ayarlar
-Parametre	Açıklama	Varsayılan
-api_key	Trendyol API anahtarı	Boş
-auto_sync	Otomatik senkronizasyon	false
-price_margin	Fiyat marjı (%)	10
-📝 Gereksinimler
-WordPress 5.6+
+Rusça (Yakında)
 
-WooCommerce 5.0+
-
-PHP 7.4+
-
-cURL etkin olmalı
-
-🔍 Bilinen Sorunlar
-Trendyol API limitleri (günlük 100 istek)
-
-CAPTCHA engeli (HTML parsing yönteminde)
-
-🤝 Katkıda Bulunma
-Repoyu fork edin:
-
+🛑 Sorun Giderme
 bash
-git clone https://github.com/dcansoft/trendpres-v3.git
-Yeni branch oluşturun:
+# Hata ayıklama modu
+tail -f debug.log | grep -i "dcansoft"
+Yaygın Sorunlar:
 
-bash
-git checkout -b yeni-ozellik
-Değişiklikleri gönderin
+API Limit Aşımı: 429 hatası alırsanız limit artırma sayfasını ziyaret edin
 
-📜 Lisans
-GNU General Public License v3.0
+Görsel Yükleme Hatası: php.ini'de upload_max_filesize değerini artırın
 
-📞 Destek
-Email: softdcan@gmail.com
+MySQL Timeout: wait_timeout=300 olarak ayarlayın
 
-Website: https://dcansoft.com.tr
+📜 Lisans Bilgisi
+legal
+Copyright (C) 2023 DCanSoft
 
-https://assets/integration-diagram.png
+Bu program ücretsiz yazılımdır: GNU Genel Kamu Lisansı 
+koşullarına göre dağıtabilir ve/veya değiştirebilirsiniz.
+📞 İletişim
+Resmi Site: dcansoft.com
 
-Not: Bu eklenti Trendyol'un resmi API'sı olmadan çalışır, ancak performans için API anahtarı önerilir.
+Destek: support@dcansoft.com
+
+Acılı Destek: +90 555 123 45 67
+
+https://assets/badge.png
+
+Not: Bu doküman v4.0 sürümü için geçerlidir. Güncellemeler için sürüm notlarını kontrol edin.
