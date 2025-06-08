@@ -3,6 +3,15 @@ DCanSoft TrendPres v4.0
 WooCommerce için Trendyol Entegrasyon Eklentisi
 https://assets/dcansoft-logo.png
 
+🌍 Çoklu Dil Desteği
+Türkçe
+
+İngilizce
+
+Arapça (Beta)
+
+Rusça (Yakında)
+
 📌 Temel Özellikler
 Trendyol'dan Ürün Aktarımı: URL ile kolay ürün çekme
 
@@ -11,6 +20,16 @@ Otomatik WooCommerce Entegrasyonu: Çekilen ürünlerin otomatik oluşturulması
 Profesyonel Admin Paneli: Kullanıcı dostu arayüz
 
 Gelişmiş Ürün Yönetimi: Fiyat, stok ve görsel senkronizasyonu
+
+
+🛠 Teknik Özellikler
+
+Bileşen	Minimum Gereksinim	Önerilen
+PHP	7.4	8.0+
+WordPress	5.8	6.2+
+WooCommerce	5.5	7.0+
+MySQL	5.6	8.0
+
 
 📦 Kurulum
 Gereksinimler
@@ -79,7 +98,13 @@ Gelişmiş hata yönetimi
 
 Performans iyileştirmeleri
 
-📞 Destek
-Teknik Destek İçin:
+📜 Lisans
+GNU General Public License v3.0
 
-Resmi Web Sitesi : https://dcansoft.com.tr
+📞 Destek
+
+Email: destek@dcansoft.com
+
+Website: https://dcansoft.com.tr
+
+
