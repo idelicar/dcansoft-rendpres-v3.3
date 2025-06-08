@@ -1,100 +1,83 @@
-#DCanSoft TrendPres v4.0 - Ultimate WooCommerce Trendyol Entegrasyonu
-https://assets/banner.png
+DCanSoft TrendPres v4.0 - WooCommerce için Trendyol Entegrasyon Eklentisi
+https://assets/dcansoft-logo.png
 
-🌟 Premium Özellikler
-🚀 Akıllı Ürün Çekme
-1-Tıkla Aktarma: Trendyol linkiyle ürünleri otomatik al
+📌 Temel Özellikler
+Trendyol'dan Ürün Aktarımı: URL ile kolay ürün çekme
 
-Çoklu Format Desteği: URL, CSV veya API bağlantısı
+Otomatik WooCommerce Entegrasyonu: Çekilen ürünlerin otomatik oluşturulması
 
-Gerçek Zamanlı Önizleme: Ürünler eklenmeden önce görüntüle
+Profesyonel Admin Paneli: Kullanıcı dostu arayüz
 
-📊 Güçlü Analitik
-Diagram
-Code
-🛠 Teknik Özellikler
-Bileşen	Minimum Gereksinim	Önerilen
-PHP	7.4	8.0+
-WordPress	5.8	6.2+
-WooCommerce	5.5	7.0+
-MySQL	5.6	8.0
-🎯 Kullanım Senaryoları
-Dropshipping Mağazaları
+Gelişmiş Ürün Yönetimi: Fiyat, stok ve görsel senkronizasyonu
 
-bash
-# Toplu ürün aktarma
-wp dcansoft import --file=urunler.csv --type=trendyol
-Fiyat Karşılaştırma Siteleri
+📦 Kurulum
+Gereksinimler
+WordPress 5.6+
 
-php
-// API Kullanımı
-$product = DCansoft_API::get_product('trendyol_ID');
-Stok Senkronizasyonu
+WooCommerce 5.0+
 
-javascript
-// Otomatik senkronizasyon
-setInterval(syncProducts, 3600000); // Her saat
-📦 Kurulum Paketi İçeriği
-text
+PHP 7.4+
 
-dcansoft-trendpres/
-├── assets/               # Görsel dosyalar
-│   ├── css/              # Admin stilleri
-│   ├── js/               # Interaktif scriptler
-│   └── img/              # Logo ve bannerlar
-├── includes/             # Çekirdek fonksiyonlar
-│   ├── class-api.php      # API işlemleri
-│   └── class-importer.php # Veri aktarımı
-├── languages/            # Çeviri dosyaları
-├── dcansoft-trendpres.php # Ana eklenti dosyası
-└── uninstall.php         # Temiz kaldırma
+cURL etkinleştirilmiş olmalı
 
-
-🔐 Güvenlik Önlemleri
-python
-# Örnek API Doğrulama
-def verify_request(request):
-    api_key = request.headers.get('X-DCanSoft-Key')
-    if api_key != os.getenv('DCAN_API_KEY'):
-        raise PermissionError("Geçersiz erişim")
-🌍 Çoklu Dil Desteği
-
-Türkçe
-
-İngilizce
-
-Arapça (Beta)
-
-Rusça (Yakında)
-
-🛑 Sorun Giderme
-
+Kurulum Adımları
+ZIP dosyasını indirin:
 
 bash
+wget https://dcansoft.com/downloads/DCanSoft-TrendPres-v4.0.zip
+WordPress admin panelinden yükleyin:
 
-# Hata ayıklama modu
+Eklentiler > Yeni Ekle > Eklenti Yükle
 
-tail -f debug.log | grep -i "dcansoft"
-Yaygın Sorunlar:
+ZIP dosyasını seçin ve yükleyin
 
-API Limit Aşımı: 429 hatası alırsanız limit artırma sayfasını ziyaret edin
+Eklentiyi etkinleştirin
 
-Görsel Yükleme Hatası: php.ini'de upload_max_filesize değerini artırın
+🛠 Kullanım Kılavuzu
+Temel Kullanım
+WordPress admin panelinde TrendPres v4 menüsüne gidin
 
-MySQL Timeout: wait_timeout=300 olarak ayarlayın
+Trendyol ürün URL'sini ilgili alana yapıştırın
 
-📜 Lisans Bilgisi
+Ürünü Çek butonuna tıklayın
 
-legal
-Copyright (C) 2023 DCanSoft
+Gelişmiş Özellikler
+Toplu İçe Aktarım: CSV dosyası ile çoklu ürün ekleme
 
-Bu program ücretsiz yazılımdır: GNU Genel Kamu Lisansı 
-koşullarına göre dağıtabilir ve/veya değiştirebilirsiniz.
-📞 İletişim
-Resmi Site: dcansoft.com.tr
+Otomatik Senkronizasyon: Belirli aralıklarla stok ve fiyat güncelleme
 
-Destek: support@dcansoft.com
+Özel Alan Eşleştirme: Ürün özelliklerini özelleştirme
 
-https://assets/badge.png
+⚙️ Ayarlar
+API Yapılandırması
+TrendPres v4 > API Ayarları bölümünden:
 
-Not: Bu doküman v4.0 sürümü için geçerlidir. Güncellemeler için sürüm notlarını kontrol edin.
+Trendyol API anahtarınızı girin
+
+Varsayılan ürün kategorisini seçin
+
+Fiyat marjı ayarlarını yapın
+
+🔍 Sıkça Sorulan Sorunlar
+Ürünler görünmüyor
+WooCommerce ürün listesinde "Taslak" filtresini kontrol edin
+
+Ürünler > Tüm Ürünler sayfasını ziyaret edin
+
+Görsel yüklenmiyor
+Ayarlar > Medya bölümünden dosya yükleme boyutunu artırın
+
+Sunucuda GD kütüphanesinin yüklü olduğundan emin olun
+
+📝 Sürüm Notları
+v4.0 (Güncel)
+Yeni admin arayüzü
+
+Gelişmiş hata yönetimi
+
+Performans iyileştirmeleri
+
+📞 Destek
+Teknik Destek İçin:
+
+Resmi Web Sitesi : https://dcansoft.com.tr
